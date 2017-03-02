@@ -119,28 +119,16 @@ You would see:
 
 ```
 example-package@1.0.0 /path/to/example-package
-└── a → link:../a
+└── a → file:../a
 ```
 
 ```
 example-package@1.0.0 /path/to/example-package
-+-- a -> link:../a
++-- a -> file:../a
 ```
 
 Of note here: No version is included as the relavent detail is WHERE the
 package came from, not what version happened to be in that path.
-
-If we had to fallback to copying then instead you will see:
-
-```
-example-package@1.0.0 /path/to/example-package
-└── a → Copied from: link:../a
-```
-
-```
-example-package@1.0.0 /path/to/example-package
-+-- a -> Copied from: link:../a
-```
 
 ### Outdated
 
